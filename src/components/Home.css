@@ -7,3 +7,13 @@
     background-size: cover;
 
 }
+
+.top, .body{
+    width: 350px;
+}
+
+@media screen and (min-width:768px) {
+    .top, .body{
+        width: 600px;
+    }
+}
