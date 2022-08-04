@@ -1,7 +1,66 @@
 import React from 'react'
+import { ExperienceCards } from './ExperienceCards'
+import { Title } from './Title';
+import {
+  BriefcaseIcon,
+  HomeIcon,
+  SearchIcon,
+  SupportIcon,
+  BadgeCheckIcon
 
-export const Experience = () => {
+} from '@heroicons/react/outline';
+
+export const Experience = ({title}) => {
   return (
-    <div>Experience</div>
+    <div className='p-2 pb-20'>
+         <Title title={title}/>
+      <h2>
+        Thanks to my friend N'dri for letting me work on different projects when I was just starting.
+        During our time together we completed many tasks, from easy to difficulty.
+        I put about nine-months of time reworking the website to more modern looking website.
+        I've learned a ton of skills while I was working. These are all the project I've touched on,
+        for clients, and for business opportunities.
+      </h2>
+      <ExperienceCards 
+        title='Icurus Restuarent' 
+        info='Start-Up' 
+        description='Working as a co-worker in this project leading the frontend of the website'
+        dates='2021 - PRESENT'
+        Icon={BriefcaseIcon}
+        Icon2={BadgeCheckIcon}
+      />
+      
+      <ExperienceCards 
+        title='PINAV' 
+        info='Start-Up' 
+        description=''
+        Icon={BriefcaseIcon}
+        Icon2={BadgeCheckIcon}
+      />
+      <ExperienceCards 
+        title='KSN' 
+        info='Volunteer'
+        description='' 
+        Icon={SupportIcon}
+        Icon2={BadgeCheckIcon}
+      />
+      <ExperienceCards 
+        title='Facebook' 
+        info='Volunteer'
+        description='' 
+        Icon={SearchIcon}
+        Icon2={BadgeCheckIcon}
+      />
+      <div className='relative'>
+        <ExperienceCards 
+        title='Instagram' 
+        info='Volunteer'
+        description='' 
+        Icon={SearchIcon}
+        Icon2={BadgeCheckIcon}
+        />
+        <div className='arrow-down absolute left-7'/>
+      </div>
+    </div>
   )
 }

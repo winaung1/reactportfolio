@@ -4,15 +4,16 @@ import { Experience } from "./components/Experience";
 import { Home } from "./components/Home";
 import { Navbar } from "./components/Navbar";
 
+ 
 
 function App() {
   return (
     <div className="min-w-[360px]">
      <Navbar/>
      <Home/>
-     <About/>
-     <Experience/>
-     <Contact/>
+     <About title='ABOUT'/>
+     <Experience  title='EXPERIENCE'/>
+     <Contact  title='CONTACT'/>
     </div>
   );
 }
