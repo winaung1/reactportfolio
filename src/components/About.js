@@ -27,7 +27,7 @@ if(data){
 }
 
   return (
-    <div>
+    <div className='bg-gray-800 min-h-screen'>
       <Title title={title}/>
       {content}
     </div>
