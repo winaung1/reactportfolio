@@ -17,7 +17,7 @@ function App() {
     <div className="min-w-[360px]">
      <Navbar/>
      <Home/>
-     <About title='About'/>
+     <About title="About"/>
      <WhatIDo title='What I Do'/>
      <Skills title='Skills'/>
      <Experience  title='Experience'/>
