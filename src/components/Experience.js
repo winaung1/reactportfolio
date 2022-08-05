@@ -12,11 +12,11 @@ import {
 
 export const Experience = ({title}) => {
   return (
-    <div className='p-2 pb-20'>
+    <div className='road pb-20'>
          <Title title={title}/>
-      <h2>
+      <h2 className='p-2 text-white text-center text-xl md:text-2xl ml-auto mr-auto max-w-2xl'>
         Thanks to my friend N'dri for letting me work on different projects when I was just starting.
-        During our time together we completed many tasks, from easy to difficulty.
+        During our time together we completed many tasks, from easy to difficulty. <br/>
         I put about nine-months of time reworking the website to more modern looking website.
         I've learned a ton of skills while I was working. These are all the project I've touched on,
         for clients, and for business opportunities.

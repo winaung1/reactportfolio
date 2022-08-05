@@ -4,7 +4,7 @@ export const Contact = ({title}) => {
   return (
     <div className='home min-h-screen pt-10 p-5'>
        <Title title={title}/>
-      <form className='ml-auto mr-auto max-w-xl text-white font-bold text-2xl'>
+      <form className='flex flex-col item-center min-h-screen justify-center ml-auto mr-auto max-w-xl text-white font-bold text-2xl'>
           <div class="grid gap-6 mb-6 md:grid-cols-2">
             <div className='relative'>
               <input type="text" id="first_name" class="block bg-transparent rounded-t-lg px-2.5 pb-1.5 pt-4 w-full text-sm border-0 border-b-[3px] appearance-none dark:focus:border-[#009897] focus:outline-none focus:ring-0 focus:border-[#009897] peer" placeholder=" " />
