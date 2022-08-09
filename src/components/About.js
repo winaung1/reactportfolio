@@ -27,10 +27,10 @@ export const About = ({title}) => {
 
 
   return (
-    <div className=' bg-gray-800 px-5 text-lg min-h-screen text-white '>
+    <div className=' bg-gray-800 px-5 text-lg min-h-screen text-gray-300 '>
       <Title title={title}/>
       {/* {content} */}
-      <p className='pb-5'>
+      <p className='pb-5 leading-normal md:px-5 md:text-2xl max-w-4xl ml-auto mr-auto'>
         My name is Win Aung. I'm from Thailand refugee camp. 
         I am a self-taught developer. 
         I've worked on many projects to expand my skills as a front-end developer. 
@@ -39,7 +39,7 @@ export const About = ({title}) => {
         I work hard because I know I can do great things one day. I can be creative,
         this is the only field that I can play and expand my skills.
       </p>
-      <div className='my mx-auto py-32'>
+      <div className='my mx-auto py-32 md:py-96 max-w-4xl'>
         <p className='opacity-0'>
           dfsaaaaaaaaaa
       adsf

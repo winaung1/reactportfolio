@@ -21,45 +21,62 @@ export const Experience = ({title}) => {
         I've learned a ton of skills while I was working. These are all the project I've touched on,
         for clients, and for business opportunities.
       </h2>
-      <ExperienceCards 
-        title='Icurus Restuarent' 
-        info='Start-Up' 
-        description='Working as a co-worker in this project leading the frontend of the website'
-        dates='2021 - PRESENT'
-        Icon={BriefcaseIcon}
-        Icon2={BadgeCheckIcon}
-      />
-      
-      <ExperienceCards 
-        title='PINAV' 
-        info='Start-Up' 
-        description=''
-        Icon={BriefcaseIcon}
-        Icon2={BadgeCheckIcon}
-      />
-      <ExperienceCards 
-        title='KSN' 
-        info='Volunteer'
-        description='' 
-        Icon={SupportIcon}
-        Icon2={BadgeCheckIcon}
-      />
-      <ExperienceCards 
-        title='Facebook' 
-        info='Volunteer'
-        description='' 
-        Icon={SearchIcon}
-        Icon2={BadgeCheckIcon}
-      />
-      <div className='relative'>
-        <ExperienceCards 
-        title='Instagram' 
-        info='Volunteer'
-        description='' 
-        Icon={SearchIcon}
-        Icon2={BadgeCheckIcon}
-        />
-        <div className='arrow-down absolute left-7'/>
+      <div className='relative w-full md:max-w-3xl mx-auto lg:px-10 lg:w-[1000px] lg:max-w-none'>
+      <div className='absolute bg-[#009897] w-[2px] min-h-full lg:left-[531px] lg:block hidden'/>
+        <li>
+          <ExperienceCards 
+            title='Icurus Restuarent' 
+            info='Start-Up' 
+            description='Working as a co-worker in this project leading the frontend of the website'
+            dates='2021 - PRESENT'
+            Icon={BriefcaseIcon}
+            Icon2={BadgeCheckIcon}
+          />
+        </li>
+        <li>
+          <ExperienceCards 
+            title='PINAV' 
+            info='Start-Up' 
+            description='Working as a co-worker in this project leading the frontend of the website'
+            dates='2021 - PRESENT'
+            Icon={BriefcaseIcon}
+            Icon2={BadgeCheckIcon}
+          />
+        </li>
+        <li>
+          <ExperienceCards 
+            title='KSN' 
+            info='Volunteer'
+            description='Working as a co-worker in this project leading the frontend of the website'
+            dates='2021 - PRESENT'
+            Icon={SupportIcon}
+            Icon2={BadgeCheckIcon}
+          />
+        </li>
+        <li>
+          <ExperienceCards 
+            title='Facebook' 
+            info='Volunteer'
+            description='Working as a co-worker in this project leading the frontend of the website'
+            dates='2021 - PRESENT'
+            Icon={SearchIcon}
+            Icon2={BadgeCheckIcon}
+          />
+        </li>
+        <li>
+          <div className='relative'>
+            <ExperienceCards 
+            title='Instagram' 
+            info='Volunteer'
+            description='Working as a co-worker in this project leading the frontend of the website'
+            dates='2021 - PRESENT'
+            Icon={SearchIcon}
+            Icon2={BadgeCheckIcon}
+            />
+            <div className='arrow-down absolute left-7 lg:left-[63px]'/>
+          </div>
+        </li>
+
       </div>
     </div>
   )

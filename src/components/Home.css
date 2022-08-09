@@ -23,6 +23,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .my{
   background: url('/public/my.jpg');
   height: 100%;
@@ -69,4 +70,21 @@
     .top, .body{
         width: 600px;
     }
+}
+@media screen and (min-width:1000px) {
+  .road li:nth-child(odd){
+    display: flex;
+    justify-content: start;
+    }
+    .road li:nth-child(even){
+      display: flex;
+      justify-content: end;
+    
+    }
+    .road li:nth-child(even){
+      display: flex;
+      justify-content: end;
+    
+    }
+   
 }
