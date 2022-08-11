@@ -2,48 +2,48 @@ import {React, useState} from 'react'
 import { Link } from 'react-scroll'
 export const Navbar = () => {
 
+  const [activeLink, setActiveLink] = useState('home');
+  const [hidden, setHidden] = useState(true);
+  const scrolled = () => {
+    if(window.scrollY > 500){
+      setHidden(false)
+    } else{
+      setHidden(true)
+
+    }
+  }
+
+window.addEventListener('scroll', scrolled);
 
   return (
-    <div>
-      <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-900 fixed top-0 z-50 w-full">
-        <div class="container flex flex-wrap justify-between items-center mx-auto">
-          <a href='/' class="flex items-center">
-              {/* <img src="/docs/images/logo.svg" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo"> */}
-              <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">WIN PORTFOLIO</span>
-          </a>
-          <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
-            <span class="sr-only">Open main menu</span>
-            <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
-          </button>
-          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-            <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-lg md:font-medium">
-              <li>
-                <Link to={"home"} smooth={true} duration={1000} className=" cursor-pointer block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Home</Link>
-              </li>
-              <li>
-                <Link to={"about"} smooth={true} duration={1000} className="cursor-pointer block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</Link>
-              </li>
-              <li>
-                <Link to={"whatido"} smooth={true} duration={1000} className="cursor-pointer block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">What I Do</Link>
-              </li>
-              <li>
-                <Link to={"skills"} smooth={true} duration={1000} className="cursor-pointer block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Skills</Link>
-              </li>
-              <li>
-                <Link to={"experience"} smooth={true} duration={1000} className="cursor-pointer block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Experience</Link>
-              </li>
-              <li>
-                <Link to={"mywork"} smooth={true} duration={1000} className="cursor-pointer block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">My Work</Link>
-              </li>
-              <li>
-                <Link to={"contact"} smooth={true} duration={1000} className="cursor-pointer block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-
-      
+    <div className={hidden ? 'hidden' : ''}>
+    <aside class="fixed right-0 top-96 z-50 w-60" aria-label="Sidebar">
+      <div class="overflow-y-auto py-4 px-3  roundedbg-transparent">
+          <ul class="space-y-2">
+            <li className="group cursor-pointer flex items-center p-2 text-base font-normal  dark:text-white">
+                <Link onClick={() => setActiveLink('home')} to={"home"} smooth={true} duration={1000} className={activeLink === 'home' ? 'active' : ''}><div className='w-3 h-3 border-[1px] rounded-full -z-5 flex items-center pl-2'><span class="ml-3 hidden group-hover:block">Home</span></div></Link>
+            </li>
+            <li className="group cursor-pointer flex items-center p-2 text-base font-normal  dark:text-white">
+                <Link onClick={() => setActiveLink('about')} to={"about"} smooth={true} duration={1000} className={activeLink === 'about' ? 'active' : ''}><div className='w-3 h-3 border-[1px] rounded-full -z-5 flex items-center pl-2'><span class="ml-3 hidden group-hover:block">About</span></div></Link>
+            </li>
+            <li className="group cursor-pointer flex items-center p-2 text-base font-normal  dark:text-white">
+                  <Link onClick={() => setActiveLink('whatido')} to={"whatido"} smooth={true} duration={1000} className={activeLink === 'whatido' ? 'active' : ''}><div className='w-3 h-3 border-[1px] rounded-full -z-5 flex items-center pl-2'><span class="ml-3 hidden group-hover:block">WhatIDo</span></div></Link>
+            </li>
+            <li className="group cursor-pointer flex items-center p-2 text-base font-normal  dark:text-white">
+                  <Link onClick={() => setActiveLink('skills')} to={"skills"} smooth={true} duration={1000} className={activeLink === 'skills' ? 'active' : ''}><div className='w-3 h-3 border-[1px] rounded-full -z-5 flex items-center pl-2'><span class="ml-3 hidden group-hover:block">Skills</span></div></Link>
+            </li>
+            <li className="group cursor-pointer flex items-center p-2 text-base font-normal  dark:text-white">
+                  <Link onClick={() => setActiveLink('experience')} to={"experience"} smooth={true} duration={1000} className={activeLink === 'experience' ? 'active' : ''}><div className='w-3 h-3 border-[1px] rounded-full -z-5 flex items-center pl-2'><span class="ml-3 hidden group-hover:block">Experience</span></div></Link>
+            </li>
+            <li className="group cursor-pointer flex items-center p-2 text-base font-normal  dark:text-white">
+                  <Link onClick={() => setActiveLink('mywork')} to={"mywork"} smooth={true} duration={1000} className={activeLink === 'mywork' ? 'active' : ''}><div className='w-3 h-3 border-[1px] rounded-full -z-5 flex items-center pl-2'><span class="ml-3 hidden group-hover:block">MyWork</span></div></Link>
+            </li>
+            <li className="group cursor-pointer flex items-center p-2 text-base font-normal  dark:text-white">
+                  <Link onClick={() => setActiveLink('contact')} to={"contact"} smooth={true} duration={1000} className={activeLink === 'contact' ? 'active' : ''}><div className='w-3 h-3 border-[1px] rounded-full -z-5 flex items-center pl-2'><span class="ml-3 hidden group-hover:block">Contact</span></div></Link>
+            </li>
+          </ul>
+      </div>
+    </aside>
     </div>
   )
 }

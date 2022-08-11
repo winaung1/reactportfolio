@@ -10,14 +10,12 @@ import {
 import { Mywork } from "./components/Mywork";
 import { Skills } from "./components/Skills";
 import { WhatIDo } from "./components/WhatIDo";
-import { Route, Routes } from "react-router-dom";
 
 function App() {
 
   return (
     <div className="min-w-[360px]">
         <Navbar/>
-  
         <Home/>
         <About title="About"/>
         <WhatIDo title='What I Do'/>
