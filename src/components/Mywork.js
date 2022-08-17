@@ -40,18 +40,17 @@ export const Mywork = ({title}) => {
             skills5='Django'
           />
           <MyWorkCards 
-            myText='Now is the winter of our discontent
-            Made glorious summer by this sun of York;
-            And all the clouds that lourd upon our house
-            In the deep bosom of the ocean buried.
-            Now are our brows bound with victorious wreaths;
-            Our bruised arms hung up for monuments;'
-            IconImage={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbBly9neOCI8eZnGlaNIejHMOdYq0mSAGpvA&usqp=CAU'}
-            Title='Facebook'
-            skills1='React'
+            myText='This is the project that I was doing for fun to practice my skills when I had no real project to do.
+            I was fetching the data from the movie database and display it on the screen. I was learning a ton of skills such as the css framework Tailwind
+            and fetching data from API.'
+            IconImage={'/desktop.png'}
+            Demo={'https://hulu-2-snowy.vercel.app/'}
+            Code={'https://github.com/winaung1/Hulu-2'}
+            Title='HULU 2.0'
+            skills1='NEXT Js'
             skills2='Tailwind'
             skills3='Javascript'
-            skills4='Firebase'
+            skills4='Vercel'
             skills5='Express'
           />
           <MyWorkCards 
