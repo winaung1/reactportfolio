@@ -2,7 +2,7 @@ import React from 'react'
 import { Title } from './Title';
 export const Contact = ({title}) => {
   return (
-    <div className='home min-h-screen pt-10 p-5'>
+    <div className='home min-h-screen pt-10 p-5' id='contact'>
        <Title title={title}/>
       <form className='flex flex-col item-center min-h-screen justify-center ml-auto mr-auto max-w-xl text-white font-bold text-2xl'>
           <div class="grid gap-6 mb-6 md:grid-cols-2">

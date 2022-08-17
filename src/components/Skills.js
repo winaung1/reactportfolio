@@ -14,7 +14,7 @@ import { Tools } from './Tools';
 export const Skills = ({title}) => {
 
   return (
-    <div className='min-h-screen bg-gray-800 lg:flex items-center justify-center gap-x-10'>
+    <div className='min-h-screen bg-gray-800 lg:flex items-center justify-center gap-x-10' id='skills'>
         <div className='py-10'>
         <Title title={title}/>
           <p className='pt-10 w-80 mx-auto flex items-center space-x-2 text-white'><CogIcon className='h-7'/><span className='text-2xl font-bold'>DEVELOPMENT</span></p>

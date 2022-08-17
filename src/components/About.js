@@ -27,31 +27,34 @@ export const About = ({title}) => {
 
 
   return (
-    <div className=' bg-gray-800 px-5 text-lg min-h-screen text-gray-300 '>
+    <div className=' bg-gray-800 px-5 text-lg min-h-screen text-gray-300 pb-10' id='about'>
       <Title title={title}/>
       {/* {content} */}
-      <p className='pb-5 leading-normal md:px-5 md:text-2xl max-w-4xl ml-auto mr-auto'>
-        My name is Win Aung. I'm from Thailand refugee camp. 
-        I am a self-taught developer. 
-        I've worked on many projects to expand my skills as a front-end developer. 
-        I work hard everyday regardless, I used to like going out and stuff,
-        now I've been obsessed with making websites because I see many opportunities. 
-        I work hard because I know I can do great things one day. I can be creative,
-        this is the only field that I can play and expand my skills.
-      </p>
-      <div className='my mx-auto py-32 md:py-96 max-w-4xl'>
-        <p className='opacity-0'>
-          dfsaaaaaaaaaa
-      adsf
-      afds
-      dfsa
-      adfs
+      <div className='lg:flex items-center lg:w-[990px] lg:mx-auto lg:my-40'>
 
-      dfas
-      dsf
-      fdsa
-      asdf
-      asd</p>
+          <p className='pb-5 leading-normal md:px-5 md:text-2xl max-w-4xl ml-auto mr-auto lg:w-[800px]'>
+            My name is Win Aung. I'm from Thailand refugee camp. 
+            I am a self-taught developer. 
+            I've worked on many projects to expand my skills as a front-end developer. 
+            I work hard everyday regardless, I used to like going out and stuff,
+            now I've been obsessed with making websites because I see many opportunities. 
+            I work hard because I know I can do great things one day. I can be creative,
+            this is the only field that I can play and expand my skills.
+          </p>
+          <div className='my mx-auto py-32 md:py-40 max-w-4xl'>
+            <p className='opacity-0'>
+              dfsaaaaaaaaaa
+          adsf
+          afds
+          dfsa
+          adfs
+
+          dfas
+          dsf
+          fdsa
+          asdf
+          asd</p>
+          </div>
       </div>
     </div>
   )

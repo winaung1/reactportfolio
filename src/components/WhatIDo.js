@@ -12,7 +12,7 @@ import { Lines } from './Lines';
 
 export const WhatIDo = ({title}) => {
   return (
-    <div className='min-h-screen office py-10'>
+    <div className='min-h-screen office py-10' id='whatido'>
         <Title title={title}/>
         <div className='relative md:flex md:flex-wrap mx-auto py-10 my-auto max-w-6xl md:px-[83px]'>
           <WhatIDoCards

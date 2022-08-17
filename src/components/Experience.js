@@ -12,7 +12,7 @@ import {
 
 export const Experience = ({title}) => {
   return (
-    <div className='road pb-20'>
+    <div className='road pb-20' id='experience'>
          <Title title={title}/>
       <h2 className='p-2 text-white text-center text-xl md:text-2xl ml-auto mr-auto max-w-2xl'>
         Thanks to my friend N'dri for letting me work on different projects when I was just starting.
