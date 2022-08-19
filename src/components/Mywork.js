@@ -9,12 +9,9 @@ export const Mywork = ({title}) => {
         <Title title={title}/>
         <div className='max-w-4xl mx-auto px-4 sm:px-6 lg:px-8'>
           <MyWorkCards 
-            myText='Now is the winter of our discontent
-            Made glorious summer by this sun of York;
-            And all the clouds that lourd upon our house
-            In the deep bosom of the ocean buried.
-            Now are our brows bound with victorious wreaths;
-            Our bruised arms hung up for monuments;'
+            myText='This is the longest project that my friend and I have done. It tooks us almost a year to make the project finished.
+            This is the first project that I touched on since I started coding for the first month. I have learned alot and keep on doing the project eventhough it was hard.
+            But here is our finished product'
             IconImage={'https://www.upwork.com/catalog-images-resized/c511fb95749f718f04d5c7e21a978f01/large'}
             Tag={'https://www.google.com'}
             Title='Icurus Restuarent'
