@@ -12,7 +12,7 @@ export const Mywork = ({title}) => {
             myText='This is the longest project that my friend and I have done. It tooks us almost a year to make the project finished.
             This is the first project that I touched on since I started coding for the first month. I have learned alot and keep on doing the project eventhough it was hard.
             But here is our finished product'
-            IconImage={'https://www.upwork.com/catalog-images-resized/c511fb95749f718f04d5c7e21a978f01/large'}
+            IconImage={'/icurus.png'}
             Tag={'https://www.google.com'}
             Title='Icurus Restuarent'
             skills1='Python'
