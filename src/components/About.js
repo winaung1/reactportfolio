@@ -25,6 +25,7 @@ export const About = ({title}) => {
 //   </div>
 // }
 
+
   return (
     <div className=' bg-gray-800 px-5 text-lg min-h-screen text-gray-300 pb-10' id='about'>
       <Title title={title}/>
@@ -48,7 +49,7 @@ export const About = ({title}) => {
           dfsa
           adfs
 
-          dfas
+          icdfas
           dsf
           fdsa
           asdf
